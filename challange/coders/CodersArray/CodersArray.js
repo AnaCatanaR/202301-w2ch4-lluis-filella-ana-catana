@@ -10,6 +10,14 @@ class CodersArray {
 
     this.length = index;
   }
+
+  push(...arg) {
+    let counter = this.length;
+    for (const argument of arg) {
+      this[counter++] = argument;
+      this.length++;
+    }
+  }
 }
 
 export default CodersArray;
